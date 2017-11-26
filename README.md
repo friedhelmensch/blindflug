@@ -4,4 +4,4 @@ For a couple of months back in 2014 and 2015 it was possible to see where ["blin
 
 This app made use of that flaw by letting you select your destination and trying blind booking until the desired destination would show up as the "secret" destination.
 
-Since germanwings has removed their flaw from their website I am publishing my app.
+Since germanwings has removed the flaw from their website I am publishing my app.

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="YourCodeBaseHere" href="blindflug_webstart.jnlp">
+    <information>
+        <title>Blindflug</title>
+        <vendor>Friedhelmensch</vendor>
+        <description>Blindflug</description>
+    </information>
+    <resources>
+        <j2se version="1.7+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="Blindflug.jar" main="true" />
+         <jar href="resources/joda-time-2.1.jar"/>
+         <jar href="resources/jcalendar-1.4.jar"/>
+         <jar href="resources/selenium-server-standalone-2.48.2.jar"/>
+         <jar href="resources/jgoodies-common-1.6.0.jar"/>
+         <jar href="resources/jgoodies-looks-2.5.3.jar"/>
+         <jar href="resources/htmlcleaner-2.7.jar"/>
+    </resources>
+    <security>  
+        <all-permissions/>  
+    </security>
+    <application-desc main-class="de.kapuzenholunder.germanwings.Starter">
+    </application-desc>
+    <update check="always" policy="always"/>
+</jnlp>                                   

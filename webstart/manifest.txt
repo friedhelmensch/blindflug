@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Application-Name: Blindflug
+Main-Class: de.kapuzenholunder.germanwings.Starter
+Permissions: all-permissions
+Codebase: yourUrlHere

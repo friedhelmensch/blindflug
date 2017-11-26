@@ -1,0 +1,196 @@
+<html>
+<head>
+</head>
+<body>
+<h1>Projekt Blindflug<h1>
+
+<h2>Installation und Start</h2>
+
+<p>Ueber einen Klick auf "Launch" wurde das Programm gestartet.</p>
+
+<h3>Version 1.4</h3>
+<script src="http://www.java.com/js/deployJava.js"></script>
+    <script>
+        var dir = location.href.substring(0,
+            location.href.lastIndexOf('/')+1);
+        var url = dir + "blindflug_webstart.jnlp";
+        deployJava.createWebStartLaunchButton(url, '1.7.0');
+    </script>
+    <br>
+<a href="#function"><h3>Wie funktionierts?</h3></a>
+<a href="#requirements"><h3>Was brauche ich?</h3></a>
+<a href="#donate"><h3>Wie kann ich helfen?</h3></a>
+
+<h3>V 1.4</h3>
+- Minimale Aufloesung reduziert auf 1024x768.<br>
+- Robustere Suche bei kleinem Browserfenster.<br>
+
+<h3>V 1.3</h3>
+- Blindflug ist zurueck. Alle sind gespannt fuer wie lange.<br>
+- Minimal benoetigte Aufloesung: 1280 x 800.<br>
+
+<h3>V 1.2</h3>
+- Fehlerbehandlung wenn keinerlei Fluege verfuegbar sind.<br>
+
+<h3>V 1.1</h3>
+- Robustere Flugzeitermittlung durch Nutzung eines zweiten webservices.<br>
+- Performanceverbesserung durch Caching der Fehlversuche<br>
+
+<h3>V 1.0</h3>
+- Es werden wieder alle Abfluege und Ziele unterstuetzt.<br>
+- Anzahl fuer Erwachsene, Kinder und Kleinkinder koennen angegeben werden<br>
+- Anzahl Versuche wurde vereinfacht.<br>
+
+<h3>V 0.8</h3>
+- Vor dem Start muss aktualisiert werden.<br>
+- Jetzt werden wieder alle Ziele unterstuetzt.<br>
+- Im Moment nur fuer eine Person und ohne Kleinkinder<br>
+- Abflug Berlin geht noch nicht.<br>
+- Ausschluesse entfernt.<br>
+
+<h3>V 0.5</h3>
+- Erste wackelige Version nach dem Relaunch von Germanwings.<br>
+
+<h3>V 2.4</h3>
+- Kompatibilitaet zu Firefoxversion 32 hergestellt.<br>
+- Firefox startet schneller als bisher.<br>
+
+<h3>V 2.3</h3>
+- Buchung nun auch inklusive Kleinkindern.<br>
+- Formatierung bei Umlauten repariert.<br>
+- Neue Konfiguration.<br>
+
+<h3>V 2.2</h3>
+- Offizielles Zertifikat.<br>
+- Verbesserte Fehlermeldungen.<br>
+- Robustere Flugzeitermittlung durch Nutzung eines zweiten webservices.<br>
+- Fehlerbehebung in der Konfigurationsermittlung.<br>
+- Beschriftung und Rechtschreibfehler verbessert.
+
+<h3>V 2.1</h3>
+- Konfigurationsermittlung ohne Browser, dadurch erheblich schneller.<br>
+- Browser zeigt "about:logo" nach Fehlversuch.
+
+<h3>V 2.0 beta</h3>
+- Automatisierung durch direkte Uebergabe der Parameter per URL ersetzt.
+
+<h3>V 1.5</h3>
+- Performanceoptimierung (Browser wird wiederverwendet)<br>
+- Textausgabe verbessert<br>
+- Fehlerbehandlung bei Flugzeitsuche<br>
+
+<h3>V 1.4.1</h3>
+- Kompatibilitaet zu neuster Firefoxversion (26.0) hergestellt.<br>
+- Konfiguration aktualisiert <br>
+
+<h3>V 1.4</h3>
+- Abflug- und Zielflughaefen (Konfiguration) koennen nun dynamisch ermittelt werden. Dadurch wird jetzt das komplette Blindbookingangebot von Germanwings durch Blindflug abgedeckt.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - beim Programmstart wird die hinterlegte Konfiguration geladen.
+Ist diese veraltet kann auf Knopfdruck die aktuelle Konfiguration ermittelt werden. Eine dynamisch ermittelte Konfiguration ist immer nur bis zum naechsten Programmstart gueltig.<br>
+- Bugfix fuer 64-bit Systeme
+
+<h3>V 1.3</h3>
+- Uhrzeitbeschraenkung jetzt fuer alle Fluege verfuegbar <br>
+- Uhrzeiten werden richtig angezeigt (hh:mm) <br>
+- Neues (selbstsigniertes) Zertifikat
+
+<h3>V 1.2</h3>
+- Das Datum kann nun auch auf die Uhrzeit beschraenkt werden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - fuer STR, HAM und TXL<br>
+- Neues Layout und Design<br>
+- Ziele fuer Hamburg und Berlin erweitert
+
+<h3>V 1.1.3</h3>
+- Die Datumskalender beschraenken jetzt auf gueltigen Zeitraum (maximal 45 Tage im Voraus)<br>
+- Bugfix in der Datumsauswahl ueber den Jahreswechsel<br>
+- Berlin als Abflugort hinzugefuegt<br>
+- Neues Layout fuer Website
+	
+<h3>V 1.1.2</h3>
+- Bugfix bei der Datumsauswahl (jetzt aber!)<br>
+- Rueckflugdatum wird an Hinflugdatum angepasst
+
+<h3>V 1.1.1</h3>
+- Bugfix Ausschlussfunktion. Funktioniert jetzt uneingeschraenkt <br>
+- Bugfix bei Datumsauswahl im uebernaechsten Monat<br>
+- Suchknopf waehrend der Suche deaktiviert<br>
+- Cursor im Einstellungsfenster wird zur Sanduhr waehrend der Suche<br>
+- Neue Flugzeit Stuttgart -> Berlin hinzugefuegt
+
+<h3>V 1.1 </h3>
+Uhrzeiten der Fluege verfuegbar fuer:</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stuttgart -> Berlin (beide Richtungen)</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stuttgart -> Hamburg (beide Richtungen)</br>
+Bug am letzten Tag des Monats wurde behoben
+
+<a name="function"><h3>Funktionsweise</h3></a>
+
+<p>Waehle <i>Abflug- und Zielflughafen</i>, sowie die <i>Anzahl
+der Personen</i> und das <i>gewuenschte Datum</i>. Das Programm startet
+automatisiert den Browser, ruft die Blindbookingseite von Germanwings mit den
+Eingabeparametern auf und prueft dann ob es sich bei dem "geheimen blindbooking
+Ziel" um das ausgewaehlte handelt. Ist dies nicht der Fall schliesst das Programm
+den Browser und beginnt das Ganze von vorn. Dies geschieht solange bis entweder
+das gewueschte Ziel gefunden oder die maximale Anzahl an eingestellten
+Versuchen erreicht ist. Wird das Ziel gefunden, gibt das Programm eine Meldung
+aus und stoppt mit geoeffnetem Browser, so dass die Buchung vom Benutzer manuell
+abgeschlossen werden kann. Dabei ist es auch moeglich den "Zurueck" Button zu
+benutzen um beispielsweise die Gepaeckoptionen oder den Sitzplatz zu aendern.</p>
+
+<h3>Ziel</h3>
+
+<p>Im Feld "Ziel" sind alle potentiellen Zielstaedte fuer den
+gewaehlten Abflug aufgefuehrt. Hierbei wird nicht nach Kategorien
+unterschieden.
+
+<h2>Limitationen</h2>
+
+<p>Das Programm kann nicht erkennen, ob Germanwings am gewuenschten
+Datum ueberhaupt einen Flug in den Wunschort anbietet. Daher sollte vor der
+Benutzung auf der Website geschaut werden ob zum gewaehlten Datum Fluege
+angeboten werden.</p>
+
+<p>Der Firefoxbrowser darf nicht minimiert werden waehrend die Suche laeuft.</p>
+
+<a name="requirements"><h1>Systemvorraussetzungen:</h1></a>
+
+<p> Aktuellste Firefox-Version <a href="http://www.mozilla.org/de/firefox/new/">http://www.mozilla.org/de/firefox/new/</a>
+(muss nicht Standardbrowser sein)</p>
+
+<p> Java RE Version 7: <a href="http://www.java.com/de/download/">http://www.java.com/de/download/</a></p>
+
+<h1>Bekannte Fehler</h1>
+
+<p>Programm beendet sich ab und zu nicht beim ersten Klick auf  &quot;x&quot;</p>
+
+<a name="donate"><h1>Helfen</h1></a>
+Falls Fehler auftreten gebt mir bitte bescheid. Ich behebe sie gern zeitnah.<br><br>
+Wer Lust hat, kann jetzt auch was <br>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="A8Q55GVUYDRS4">
+<input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen â€“ mit PayPal.">
+<img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+<script src="http://coinwidget.com/widget/coin.js"></script>
+<script>
+CoinWidgetCom.go({
+	wallet_address: "1BmLvEcAL3uvrEuC112jy2VbEbWzQP7cm1"
+	, currency: "bitcoin"
+	, counter: "hide"
+	, alignment: "bl"
+	, qrcode: false
+	, auto_show: false
+	, lbl_button: "Bitcoin Spenden"
+	, lbl_address: "Meine Bitcoinadresse"
+	, lbl_count: "donations"
+	, lbl_amount: "BTC"
+});
+</script>
+
+
+
+</body>
+
+</html>
